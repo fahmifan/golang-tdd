@@ -1,4 +1,4 @@
-package array
+package arrayslice
 
 // Sum takes slice of integer and sum the items in array
 func Sum(nums []int) (sums int) {

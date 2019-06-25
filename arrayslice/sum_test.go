@@ -1,4 +1,4 @@
-package array
+package arrayslice
 
 import "testing"
 import "reflect"
