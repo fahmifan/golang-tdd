@@ -38,3 +38,23 @@ func (c Circle) Area() float64 {
 func (c Circle) Perimeter() float64 {
 	return math.Pi * c.Radius * 2
 }
+
+type Triangle struct {
+	Base   float64
+	Height float64
+}
+
+func (t Triangle) Area() float64 {
+	return (t.Base * t.Height) / 2
+}
+
+func (t Triangle) triangleSlide() float64 {
+	// slide using phytagoras
+	slide := math.Sqrt(math.Pow(t.Base, 2) + math.Pow(t.Height, 2))
+
+	return slide
+}
+
+func (t Triangle) Perimeter() float64 {
+	return t.Base + 2*t.triangleSlide()
+}
